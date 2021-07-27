@@ -18,18 +18,6 @@ export default {
       required: true,
     }
   },
-  //   setup(props) {
-  //     const sessionSlice = computed(() => {
-  //       return props.room.session_id.slice(0, 12)
-  //     })
-  //     const timeSlice = computed(() => {
-  //       return props.room.created_at.slice(0, 19)
-  //     })
-  //     return {
-  //       sessionSlice,
-  //       timeSlice
-  //     }
-  //   }
 }
 
 </script>

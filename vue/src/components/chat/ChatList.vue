@@ -14,7 +14,6 @@
 <script>
 import ChatItem from "./ChatItem.vue"
 import { useStore } from "vuex"
-// import { computed } from 'vue'
 
 export default {
   components: {
@@ -29,9 +28,6 @@ export default {
     // 더블클릭한 채팅방의 세션id를 state에 저장
     const pickRoom = (key) => {
       store.dispatch("pickRoom", key)
-      setTimeout(() => {
-        store.state.selected_room = null
-      }, 1000)
     }
     return {
       newChat,

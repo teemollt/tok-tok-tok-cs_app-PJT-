@@ -1,16 +1,16 @@
 <template>
   <div style="position: relative; width: 650px; height: 750px; padding: 10px">
     <!-- 상대방 -->
-    <el-scrollbar ref="scrollbar" id="topMessages">
+    <el-scrollbar ref="scrollbar" id="topMessages" :scroll="scrollFunction">
       <div v-for="(msg, index) in messages" :key="index">
         <el-row>
           <el-col v-if="msg.fk_author_idx == userName">
-            <div class="message-me">
+            <div class="message-me" id="msg">
               {{ msg.message }}
             </div>
           </el-col>
           <el-col v-else>
-            <div class="message-other">{{ msg.message }}</div>
+            <div class="message-other" id="msg">{{ msg.message }}</div>
           </el-col>
         </el-row>
       </div>
@@ -133,6 +133,18 @@ export default {
       }
     };
 
+    const autoScroll = () => {
+    // msg.isScrollBottom = true;
+    // msg.addEventListener("scroll", (event) => {
+    //   if (event.target.scrollHeight - event.target.scrollTop === event.target.clientHeight) {
+    //     msg.isScrollBottom = true;
+    //   } else {
+    //     msg.isScrollBottom = false;
+    //   }
+    // });
+
+    };
+
     return {
       store,
       sessionId,
@@ -144,6 +156,8 @@ export default {
       connected,
       stompClient,
       userName,
+      msg,
+      autoScroll,
     };
   },
 };
@@ -158,6 +172,9 @@ export default {
   top: 0px;
   height: 700px;
   width: 100%;
+
+  overflow-y: scroll;
+  white-space: pre;
 }
 .el-scroll {
   overflow-x: hidden;
@@ -188,4 +205,12 @@ export default {
   border: 0px solid #eee;
 }
 /* hover로 버튼 색 변하게 하기: 추가기능 */
+
+#log {
+  white-space: pre;
+  overflow-y: scroll;
+  width: 300px;
+  height: 100px;
+  border: 1px solid black;
+}
 </style>

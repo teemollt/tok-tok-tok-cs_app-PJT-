@@ -179,10 +179,10 @@ export default createStore({
         let room = state.rooms[i];
         switch (room.session.status) {
           case 'OPEN':
-            cnt[0]++;
+            cnt[1]++;
             break;
           case 'LIVE':
-            cnt[1]++;
+            cnt[0]++;
             break;
           case 'END':
             cnt[2]++;

@@ -5,7 +5,6 @@
   <span>{{ client.username }}님 방({{ id }})</span>
   <br />
   <br />
-  <br />
   <sub>{{ time }}</sub>
 </template>
 <script>

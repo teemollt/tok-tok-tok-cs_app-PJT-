@@ -7,7 +7,7 @@
         :class="{ activeMenu: status == 'LIVE' }"
         :span="8"
       >
-        <el-badge :value="count[0]" class="item">
+        <el-badge :value="count[0]" class="badge">
           <span>진행중</span>
         </el-badge>
       </el-col>
@@ -26,7 +26,7 @@
         class="list-menu-item"
         :class="{ activeMenu: status == 'END' }"
         :span="8"
-        ><el-badge :value="count[2]" class="item">
+        ><el-badge :value="count[2]" class="badge">
           <span>종료</span>
         </el-badge></el-col
       >
@@ -192,5 +192,9 @@ export default {
 }
 .activeMenu {
   background-color: #f7f4f0;
+}
+
+.badge {
+  background: #006f3e;
 }
 </style>

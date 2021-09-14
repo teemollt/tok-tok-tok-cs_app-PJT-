@@ -24,11 +24,60 @@
 - 유튜브 데모 동영상 - https://youtu.be/856b8lwlSAg
 
 ## Preview
+<h3 align="center">
+    챗봇 사용 - user
+</h3>
 <div align="center" style="text-align: center">
 <img align="center" src="main_image2.gif" width="70%" style="text-align: center"/>
 </div>
 
+
+
+<h3 align="center">
+    챗봇 시나리오 작성 - admin
+</h3>
+<div align="center" style="text-align: center">
+<img align="center" src="README.assets/admin_bot.gif" width="70%" style="text-align: center"/>
+</div>
+
+
+
+<h3 align="center">
+    실시간 채팅 - user
+</h3>
+<div align="center" style="text-align: center">
+<img align="center" src="README.assets/user_chat.gif" width="70%" style="text-align: center"/>
+</div>
+
+
+
+<h3 align="center">
+    실시간 채팅 - admin
+</h3>
+<div align="center" style="text-align: center">
+<img align="center" src="README.assets/admin_chat.gif" width="70%" style="text-align: center"/>
+</div>
+
+
+
+<h3 align="center">
+    Video Call - user
+</h3>
+<div align="center" style="text-align: center">
+<img align="center" src="README.assets/user_webRtc.gif" width="70%" style="text-align: center"/>
+</div>
+
+
+
+<h3 align="center">
+    Screen Share - user
+</h3>
+<div align="center" style="text-align: center">
+<img align="center" src="README.assets/user_screen_share.gif" width="70%" style="text-align: center"/>
+</div>
+
 ## Folder
+
 ```
 .\
 |-- spring\
@@ -47,7 +96,7 @@
 .\
 |-- 소개자료.pdf
 ```
- 
+
 
 ## Porting Manual(with dump data)
 포팅을 위한 메뉴얼과 initialize를 위한 데이터
